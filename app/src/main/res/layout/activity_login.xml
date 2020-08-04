@@ -17,51 +17,28 @@
         android:background="?attr/colorPrimary">
     </androidx.appcompat.widget.Toolbar>
 
-    <EditText
-        android:id="@+id/etUsername"
-        android:layout_width="300dp"
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/rounded_corners"
-        android:hint="Username"
-        android:padding="10dp"
-        android:textColorHint="@color/hintText"></EditText>
-
-    <EditText
-        android:id="@+id/etPwd"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etUsername"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/rounded_corners"
-        android:hint="Password"
-        android:padding="10dp"
-        android:textColorHint="@color/hintText"></EditText>
-
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etPwd"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/rounded_buttons"
-        android:padding="3dp"
-        android:text="Login"
-        android:textColor="#FFFFFF" />
+        android:layout_marginTop="450dp"
+        />
 
     <TextView
-        android:id="@+id/tvSignUp"
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btnLogin"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="250dp"
-        android:text="Don't have an account?, Sign Up"
-        android:textColor="@color/signUpButton"></TextView>
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="140dp"
+        android:text="Welcome to FocusUp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
 
 
 </RelativeLayout>
